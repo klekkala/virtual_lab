@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+	<!--
+		Written by Kiran Kumar Lekkala, kiran@linuxcreatures.com
+	-->
+
+<picture>
+	background.png    <!--picture for background -->
+	<!-- other background details com here-->
+</picture>
+
+<pattern>
+</pattern>
+
+<motiavation>
+
+
+<pages>
+</pages>
+
+<classification>
+
+	<context>
+	</context>
+
+	<goals>
+	</goals>
+
+	<process>
+	</process>
+
+	<evaluation>
+	</evaluation>
+
+	<environment>
+	</environment>
+
+	<any other page the wants to keep>
+
+</classification>
+
+<problem>
+
+<solution>
+
+<pre-condition>
