@@ -9,11 +9,25 @@
 	<!-- other background details com here-->
 </picture>
 
-<pattern>
-</pattern>
+<language>
+	<name>
+	</name>
+	<encoding>
+	</encoding>
+</language>
 
-<motiavation>
 
+<levelofabstraction>
+</levelofabstraction>
+
+<problem>
+</problem>
+
+<solution>
+</solution>
+
+<pre-condition>
+</pre-condition>
 
 <pages>
 </pages>
@@ -21,15 +35,61 @@
 <classification>
 
 	<context>
+		<font>
+		</font>
+
+		<fields>
+		</fields>
 	</context>
 
 	<goals>
+		<font>
+		</font>
+
+		<fields>
+		</fields>
+
+		<goal1>
+			<name>
+			</name>
+
+			<start>
+			</start>
+			
+			<end>
+			</end>
+
+			<priority>
+			</priority>
+
+			<description>
+			</description>
+		</goal1>
+
+		<goal2>
+			<name>
+			</name>
+
+			<start>
+			</start>
+			
+			<end>
+			</end>
+
+			<priority>
+			</priority>
+
+			<description>
+			</description>
+		</goal3>
 	</goals>
 
 	<process>
 	</process>
 
 	<evaluation>
+		<process>
+		</process>
 	</evaluation>
 
 	<environment>
@@ -39,8 +99,3 @@
 
 </classification>
 
-<problem>
-
-<solution>
-
-<pre-condition>
