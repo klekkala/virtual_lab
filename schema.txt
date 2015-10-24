@@ -4,6 +4,7 @@
 		Written by Kiran Kumar Lekkala, kiran@linuxcreatures.com
 	-->
 
+## page 1
 <picture>
 	background.png    <!--picture for background -->
 	<!-- other background details com here-->
@@ -16,6 +17,10 @@
 	</encoding>
 </language>
 
+<name>
+</name>
+
+##page 2
 
 <levelofabstraction>
 </levelofabstraction>
@@ -29,9 +34,11 @@
 <pre-condition>
 </pre-condition>
 
+## page 4
 <pages>
 </pages>
 
+## page 5
 <classification>
 
 	<context>

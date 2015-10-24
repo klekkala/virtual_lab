@@ -82,8 +82,6 @@
 	<script src="../prettify.js"></script>
 	<script>
 	$(document).ready(function() {
-$('#rootwizard').bootstrapWizard({'tabClass': 'bwizard-steps'});
-		window.prettyPrint && prettyPrint()
 $('#rootwizard .progress-bar').css({width:$percent+'%'});
 			}});
 
