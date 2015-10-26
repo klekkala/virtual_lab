@@ -9,7 +9,6 @@
 <?php
 
 // Get real path for our folder
-<<<<<<< HEAD
 $rootPath = realpath('/var/www/html/easyauthor');
 =======
 $rootPath = realpath('/home/kiran/easyauthor_gen/easyauthor');
