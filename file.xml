@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+        <design>
+        
+            <language>  </language>
+            <backgroundimage>  </backgroundimage>
+            <backgroundcolor>  </backgroundcolor>
+            <colortheme>  </colortheme>
+            <animationstyle>  </animationstyle>
+            <animationspeed>  </animationspeed>
+            <sizeofletters>  </sizeofletters>
+            
+            <menu>
+            
+                <title>Menu  </title>
+                <backgroundimage>  </backgroundimage>
+                <backgroundcolor>black  </backgroundcolor>
+                <colortheme>white  </colortheme>
+            
+            </menu>
+            
+            
+                <lesson>
+                
+                    <title> Apple like Ball </title>
+                    
+                    <colortheme>#057cb8, orange  </colortheme>
+                    <animationstyle>  </animationstyle>
+                    <animationspeed>slow  </animationspeed>
+                    <sizeofletters>medium  </sizeofletters>
+                    
+                    <instructions>
+                    
+                        <start>
+                        
+                            <text>  </text>
+                            <sound>  </sound>
+                            <image>  </image>
+                        
+                        </start>
+                        <middle>
+                        
+                            <text>  </text>
+                            <sound>  </sound>
+                            <image>  </image>
+                        
+                        </middle>
+                        <end>
+                        
+                            <text>  </text>
+                            <sound>  </sound>
+                            <image>  </image>
+                        
+                        </end>
+                    
+                    </instructions>
+                    
+                    <goals>
+                    
+                        
+                            <goal>
+                            
+                                <text>We will try to learn letters A and B  </text>
+                                <sound>  </sound>
+                                <image>  </image>
+                            
+                            </goal>
+                        
+                        
+                    
+                    </goals>
+                    <letters>
+                    
+                        
+                            <letter>
+                            
+                                <text>A  </text>
+                                <sound>  </sound>
+                                <colortheme>  </colortheme>
+                                
+                                <animationstyle>  </animationstyle>
+                                <animationspeed>  </animationspeed>
+                                <sizeofletters>  </sizeofletters>
+                                
+                                <instructions>
+                                
+                                    <start>
+                                    
+                                        <text>  </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </start>
+                                    <middle>
+                                    
+                                        <text>  </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </middle>
+                                    <end>
+                                    
+                                        <text>  </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </end>
+                                
+                                </instructions>
+                                <words>
+                                
+                                    
+                                    <word>
+                                    
+                                        <text>Apple  </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </word>
+                                    
+                                    
+                                    <word>
+                                    
+                                        <text>Axe  </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </word>
+                                    
+                                
+                                </words>
+                            
+                            </letter>
+                        
+                        
+                            <letter>
+                            
+                                <text>B </text>
+                                <sound>  </sound>
+                                <colortheme>  </colortheme>
+                                
+                                <animationstyle>  </animationstyle>
+                                <animationspeed>  </animationspeed>
+                                <sizeofletters>  </sizeofletters>
+                                
+                                <instructions>
+                                
+                                    <start>
+                                    
+                                        <text>  </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </start>
+                                    <middle>
+                                    
+                                        <text>  </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </middle>
+                                    <end>
+                                    
+                                        <text>  </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </end>
+                                
+                                </instructions>
+                                <words>
+                                
+                                    
+                                    <word>
+                                    
+                                        <text> Ball </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </word>
+                                    
+                                    
+                                    <word>
+                                    
+                                        <text> Bat </text>
+                                        <sound>  </sound>
+                                        <image>  </image>
+                                    
+                                    </word>
+                                    
+                                
+                                </words>
+                            
+                            </letter>
+                        
+                    
+                    </letters>
+                
+                </lesson>
+            
+            
+        
+        </design>

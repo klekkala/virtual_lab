@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function test(){    
+   var v = new  XMLWriter();
+   v.writeStartDocument(true);
+   v.writeElementString('test','Hello World');
+   v.writeAttributeString('foo','bar');
+   v.writeEndDocument();
+   console.log( v.flush() );
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Press the button to start</h2> 
+    <input type="button" onclick="test()" value="xml file"/>
+
+</body>
+</html>
