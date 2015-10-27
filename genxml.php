@@ -8,16 +8,15 @@
 
 <?php
 
-$xml = new SimpleXMLElement('<xml/>');
+$xml = new DOMDocument();
+$xml_album = $xml->createElement("Album");
+$xml_track = $xml->createElement("Track");
+$xml_album->appendChild( $xml_track );
+$xml->appendChild( $xml_album );
 
-for ($i = 1; $i <= 8; ++$i) {
-    $track = $xml->addChild('track');
-    $track->addChild('path', "song$i.mp3");
-    $track->addChild('title', "Track $i - Track Title");
-}
+$xml->save("/var/www/html/test.xml");
 
-Header('Content-type: text/xml');
-print($xml->asXML());
+?>
 
 </BODY>
 </HTML>

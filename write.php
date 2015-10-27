@@ -7,12 +7,11 @@
 
 
 <?php
-$myfile = fopen("/var/www/html/easyauthor/test.txt", "w") or die("Unable to open file!");
-$txt = "John Doe\n";
-fwrite($myfile, $txt);
-$txt = "Jane Doe\n";
-fwrite($myfile, $txt);
-fclose($myfile);
+echo "<html>
+<head>
+<title>EasyAuthor</title>
+</head>
+</html>";
 ?>
 
 </BODY>
