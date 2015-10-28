@@ -5,11 +5,11 @@
 	-->
 
 <picture>
-	background.png    <!--picture for background -->
-	<!-- other background details com here-->
+	<text>Include a picture of your framework here</text>
 </picture>
 
 <language>
+	<text>Which Language do you want to build the app?</text>
 	<name>
 	</name>
 	<encoding>
@@ -17,20 +17,25 @@
 </language>
 
 <tabs>
+	<text>What are the number of tabs you want in your framework?</text>
 	<number></number>
 </tabs>
 
 <name>
+	<text>
 </name>
 
 
 <problem>
+	<text>What is the problem your app is trying to solve?</text>
 </problem>
 
 <solution>
+	<text>What is the problem your app is trying to solve?</text>
 </solution>
 
 <pre-condition>
+	<text>What are the pre-conditions?</text>
 </pre-condition>
 
 
@@ -49,16 +54,15 @@
 </palletbox>
 
 <pages>
+	<text>Number of pages you want in your app</text>
 	<number></number>
 </pages>
 
 
 
 
-
-
 <classification>
-        <text> Here you have to give how you want your pages to look like* </text>
+        <text> Here you have to give how you want your pages to look like</text>
 	<context>
 		<font>
 		</font>
@@ -68,59 +72,22 @@
 	</context>
 
 	<goals>
-		<font>
-		</font>
-
-		<fields>
-		</fields>
-
-		<goal1>
-			<name>
-			</name>
-
-			<start>
-			</start>
-			
-			<end>
-			</end>
-
-			<priority>
-			</priority>
-
-			<description>
-			</description>
-		</goal1>
-
-		<goal2>
-			<name>
-			</name>
-
-			<start>
-			</start>
-			
-			<end>
-			</end>
-
-			<priority>
-			</priority>
-
-			<description>
-			</description>
-		</goal3>
+		<text>Goals for the student</text>
 	</goals>
 
 	<process>
+		<text>What is the teaching process?</text>
 	</process>
 
 	<evaluation>
-		<process>
-		</process>
+		<text>How will you evaluate the students?</text>
 	</evaluation>
 
 	<environment>
+		<text>Some Learning Environments</text>
 	</environment>
 
-	<any other page the wants to keep>
+
 
 </classification>
 

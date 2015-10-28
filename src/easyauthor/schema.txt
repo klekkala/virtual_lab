@@ -4,6 +4,7 @@
 		Written by Kiran Kumar Lekkala, kiran@linuxcreatures.com
 	-->
 
+## page 1
 <picture>
 	background.png    <!--picture for background -->
 	<!-- other background details com here-->
@@ -16,13 +17,13 @@
 	</encoding>
 </language>
 
-<tabs>
-	<number></number>
-</tabs>
-
 <name>
 </name>
 
+##page 2
+
+<levelofabstraction>
+</levelofabstraction>
 
 <problem>
 </problem>
@@ -33,32 +34,13 @@
 <pre-condition>
 </pre-condition>
 
-
-<palletbox>
-	<text>
-	</text>
-
-	<password>
-	</password>
-
-	<checkbox>
-	</checkbox>
-
-	<dropdown>
-	</dropdown>
-</palletbox>
-
+## page 4
 <pages>
-	<number></number>
 </pages>
 
-
-
-
-
-
+## page 5
 <classification>
-        <text> Here you have to give how you want your pages to look like* </text>
+
 	<context>
 		<font>
 		</font>

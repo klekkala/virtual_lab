@@ -135,12 +135,12 @@
 
 
                     <ul class="pager wizard">
-                        <li class="previous first" style="display:none;"><a href="#">First</a></li>
-                        <li class="previous"><a href="#">Previous</a></li>
-                        <li class="next last" style="display:none;"><a href="#">Last</a></li>
-                        <li class="next"><a href="#">Next</a></li>
-			<li class="finish"><a href=**>Finish</a></li>
-                    </ul>
+							<li class="previous first"><a href="javascript:;">First</a></li>
+							<li class="previous"><a href="javascript:;">Previous</a></li>
+							<li class="next last"><a href="javascript:;">Last</a></li>
+						  	<li class="next"><a href="javascript:;">Next</a></li>
+							<li class="finish"><a href="javascript:;">Finish</a></li>
+						</ul>
                 </div>
             </div>
             <div class="col-xs-12">
@@ -178,11 +178,15 @@
 $(document).ready(function() {
 
         $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
-            var $total = navigation.find('li').length;
-            var $current = index+1;
-            var $percent = ($current/$total) * 100;
-            $('#rootwizard .progress-bar').css({width:$percent+'%'});
-            }});
+			var $total = navigation.find('li').length;
+			var $current = index+1;
+			var $percent = ($current/$total) * 100;
+			$('#rootwizard').find('.bar').css({width:$percent+'%'});
+		}});
+		$('#rootwizard .finish').click(function() {
+			alert('Finished!, Starting over!');
+			$('#rootwizard').find("a[href*='tab1']").trigger('click');
+		});
 
         $('#pills').bootstrapWizard({'tabClass': 'nav nav-pills', 'debug': false, onShow: function(tab, navigation, index) {
             console.log('onShow');

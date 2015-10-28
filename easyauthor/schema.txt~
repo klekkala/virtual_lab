@@ -4,6 +4,7 @@
 		Written by Kiran Kumar Lekkala, kiran@linuxcreatures.com
 	-->
 
+## page 1
 <picture>
 	background.png    <!--picture for background -->
 	<!-- other background details com here-->
@@ -34,19 +35,6 @@
 </pre-condition>
 
 
-<palletbox>
-	<text>
-	</text>
-
-	<password>
-	</password>
-
-	<checkbox>
-	</checkbox>
-
-	<dropdown>
-	</dropdown>
-</palletbox>
 
 <pages>
 	<number></number>
