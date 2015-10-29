@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+	<!--
+		Written by Kiran Kumar Lekkala, kiran@linuxcreatures.com
+	-->
+
+<picture>
+	<text>ఇక్కడ మీ ఫ్రేమ్ యొక్క ఒక చిత్రాన్ని కలిగివుంటుంది</text>
+</picture>
+
+<language>
+	<text>మీరు మాట్లాడే భాష అనువర్తనం నిర్మించడానికి అనుకుంటున్నారు?</text>
+	<name>
+	</name>
+	<encoding>
+	</encoding>
+</language>
+
+<tabs>
+	<text>మీ ప్రణాళికలో మీకు కావలసిన టాబ్లను సంఖ్య ఏమిటి?</text>
+	<number></number>
+</tabs>
+
+<name>
+	<text>
+</name>
+
+
+<problem>
+	<text>మీ అనువర్తనం పరిష్కరించడానికి ప్రయత్నిస్తున్నారు సమస్య ఏమిటి?</text>
+</problem>
+
+<solution>
+	<text>మీ అనువర్తనం పరిష్కరించడానికి ప్రయత్నిస్తున్నారు సమస్య ఏమిటి?</text>
+</solution>
+
+<pre-condition>
+	<text>ముందు షరతులు ఏమిటి?</text>
+</pre-condition>
+
+
+<palletbox>
+	<text>
+	</text>
+
+	<password>
+	</password>
+
+	<checkbox>
+	</checkbox>
+
+	<dropdown>
+	</dropdown>
+</palletbox>
+
+<pages>
+	<text>పేజీలు సంఖ్య మీరు మీ అనువర్తనం లో కావలసిన</text>
+	<number></number>
+</pages>
+
+
+
+
+<classification>
+        <text>ఇక్కడ మీరు మీ పేజీలను చూడవచ్చు ఎలా ఇవ్వాల్సి ఉంటుంది</text>
+	<context>
+		<text>ఏం మీరు గురించి విద్యార్థులు నేర్పేటప్పుడు</text>
+	</context>
+
+	<goals>
+		<text>విద్యార్థి కోసం లక్ష్యాలు</text>
+	</goals>
+
+	<process>
+		<text>బోధన ప్రక్రియ అంటే ఏమిటి?</text>
+	</process>
+
+	<evaluation>
+		<text>ఎలా మీరు విద్యార్థులు అంచనా వేసింది?</text>
+	</evaluation>
+
+	<environment>
+		<text>కొన్ని జ్ఞానార్జన వాతావరణాలలో</text>
+	</environment>
+
+
+
+</classification>
+

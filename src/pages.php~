@@ -29,7 +29,7 @@ $txt = "<!DOCTYPE html>
 
                     fwrite($myfile, $txt);
 
-                    for ($x = 0; $x <= 6; $x++) {
+                    for ($x = 0; $x <= $num; $x++) {
                     $txt = "<li><a href="#tab1" data-toggle="tab">First</a></li>\n";
                     fwrite($myfile, $txt);
 

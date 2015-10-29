@@ -1,39 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>EasyAuthor</title>
 <!-- Bootstrap -->
 <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="../prettify.css" rel="stylesheet">
 
-<script>
-var counterText = 0;
-var counterRadioButton = 0;
-var counterCheckBox = 0;
-var counterTextArea = 0;
-function addAllInputs(divName, inputType){
-    var newdiv = document.createElement('div');
-    switch(inputType) {
-        case 'text':
-            newdiv.innerHTML = "Entry " + (counterText + 1) + " <br><input type='text' name='myInputs[]'>";
-            counterText++;
-            break;
-        case 'radio':
-            newdiv.innerHTML = "Entry " + (counterRadioButton + 1) + " <br><input type='radio' name='myRadioButtons[]'>";
-            counterRadioButton++;
-            break;
-        case 'checkbox':
-            newdiv.innerHTML = "Entry " + (counterCheckBox + 1) + " <br><input type='checkbox' name='myCheckBoxes[]'>";
-            counterCheckBox++;
-            break;
-        case 'textarea':
-            newdiv.innerHTML = "Entry " + (counterTextArea + 1) + " <br><textarea name='myTextAreas[]'>type here...</textarea>";
-            counterTextArea++;
-            break;
-    }
-    document.getElementById(divName).appendChild(newdiv);
-}
-</script>
+
 
 
 </head>
@@ -47,13 +21,9 @@ function addAllInputs(divName, inputType){
         <form id="commentForm" method="get" action="" class="form-horizontal">
             <div id="rootwizard">
                 <ul>
-                    <li><a href="#tab1" data-toggle="tab">First</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Second</a></li>
-                    <li><a href="#tab3" data-toggle="tab">Third</a></li>
-                    <li><a href="#tab4" data-toggle="tab">Fourth</a></li>
-                    <li><a href="#tab5" data-toggle="tab">Fifth</a></li>
-                    <li><a href="#tab6" data-toggle="tab">Sixth</a></li>
-                    <li><a href="#tab7" data-toggle="tab">Seventh</a></li>
+
+                    <li><a href="#tab1" data-toggle="tab">यहाँ अपने ढांचे का एक चित्र शामिल</a></li>
+                   
                 </ul>
                 <div id="bar" class="progress progress-info progress-striped">
                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
@@ -88,104 +58,7 @@ function addAllInputs(divName, inputType){
 
 
 
-                    <div class="tab-pane" id="tab2">
-                        <div class="control-group">
-                            <label class="control-label" for="url">URL</label>
-                            <div class="controls">
-                                <input type="text" id="urlfield" name="urlfield" class="required url">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="name">Name</label>
-                            <div class="controls">
-                                <input type="text" id="namefield" name="namefield" class="required">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="tab-pane" id="tab3">
-                        <div class="control-group">
-                            <label class="control-label" for="image">Image</label>
-                            <div class="controls">
-                                <input type="image" id="imagefield" name="imagefield" class="required image">
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="tab-pane" id="tab4">
-                        <div class="control-group">
-                            <label class="control-label" for="name">Levels of abstractions</label>
-                            <div class="controls">
-                                <input type="text" id="namefield" name="namefield" class="required">
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label" for="name">Problem</label>
-                            <div class="controls">
-                                <input type="text" id="namefield" name="namefield" class="required">
-                            </div>
-                        </div>
-
-
-                        <div class="control-group">
-                            <label class="control-label" for="language">Solution</label>
-                            <div class="controls">
-                                <input type="text" id="langfield" name="langfield" class="required">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="language">Pre-Conditions</label>
-                            <div class="controls">
-                                <input type="text" id="langfield" name="langfield" class="required">
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="tab-pane" id="tab5">
-                        <div class="control-group">
-                            <label class="control-label" for="url">Pages</label>
-                            <div class="controls">
-                                <input type="text" id="urlfield" name="urlfield" class="required url">
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="tab-pane" id="tab6">
-                        <div class="control-group">
-                            <label class="control-label" for="url">Some other features which you want</label>
-                            <div class="controls">
-                                <form name="myForm" method="POST">
-                                    <div id="dynamicInputs">
-                                        Let&#8217;s start adding some inputs of different types.
-                                    </div>
-                                    <p>     <select name='inputSelect'><option value ="text">text field</option><option value ="radio">radio button</option><option value ="checkbox">checkbox</option><option value ="textarea">textarea</option></select><br />
-                                    <input type="button" value="Add selected input" onClick="addAllInputs('dynamicInputs', document.myForm.inputSelect.value);"><br />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-<div class="tab-pane" id="tab7">
-                        <div class="control-group">
-                            <label class="control-label" for="url">Finish</label>
-                            <div class="controls">
-                                <p> You are done!! Click on the generate button to generate your easyauthor app</p>
-                            </div>
-<form action="gen.php">
-  <input type="submit" value="click on me!">
-</form>
-                        </div>
-                    </div>
-
-                </div>
+                   
 
 
 
