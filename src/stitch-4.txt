@@ -1,0 +1,23 @@
+<div class="tab-pane" id="tab1">
+                        <div class="control-group">
+                            <label class="control-label" for="image">Image</label>
+                            <div class="controls">
+                                <input type="image" id="imagefield" name="imagefield" class="required image">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="name">Language</label>
+                            <div class="controls">
+                                <input type="text" id="namefield" name="namefield" class="required">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="name">Encoding</label>
+                            <div class="controls">
+                                <input type="text" id="namefield" name="namefield" class="required">
+                            </div>
+                        </div>
+
+                    </div>
+

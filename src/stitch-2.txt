@@ -1,0 +1,1 @@
+<li><a href="#tab1" data-toggle="tab">यहाँ अपने ढांचे का एक चित्र शामिल</a></li>

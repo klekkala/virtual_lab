@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EasyAuthor</title>
+<!-- Bootstrap -->
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../prettify.css" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+<div class='container'>
+
+    <section id="wizard">
+        <div class="page-header">
+            <h1>Design your own EasyAuthor </h1>
+        </div>
+        <form id="commentForm" method="get" action="" class="form-horizontal">
+            <div id="rootwizard">
+                <ul>

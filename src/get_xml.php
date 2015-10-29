@@ -5,11 +5,10 @@
 <body>
 
 <?php
-    //include '/var/www/html/config/test.php'
-    $mysongs = simplexml_load_file('/var/www/html/config/hindi.xml');
-    //echo $mysongs;
-    print_r($mysongs);
+$xml=simplexml_load_file("/var/www/html/config/hindi.xml") or die("Error: Cannot create object");
+print_r($xml);
 ?>
+
 
 </body>
 <html>
