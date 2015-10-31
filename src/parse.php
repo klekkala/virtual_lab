@@ -6,7 +6,6 @@ class XmlElement {
   var $children;  //Number of children
 };
 
-
 function xml_to_object($xml, $val) {
   $tabs = array();
   $parser = xml_parser_create();
@@ -18,12 +17,18 @@ function xml_to_object($xml, $val) {
   $elements = array();  // the currently filling [child] XmlElement array
   $stack = array();
   foreach ($tags as $tag) {
+	echo 2;
     $index = count($elements);
     if ($tag['type'] == "complete" || $tag['type'] == "open") {
       $elements[$index] = new XmlElement;
-      if($tag['tag']=='text'){
-	array_push($tabs,$tag['value']);
-	}
+    //  if($tag['tag']=='text'){
+	//array_push($tabs,$tag['value']);
+	//}
+	echo $tag['type'];
+echo $tag['value'];
+echo $tag['tag'];
+
+    
       $elements[$index]->name = $tag['tag'];
       $elements[$index]->attributes = $tag['attributes'];
       $elements[$index]->content = $tag['value'];
@@ -31,15 +36,18 @@ function xml_to_object($xml, $val) {
         $elements[$index]->children = array();
         $stack[count($stack)] = &$elements;
         $elements = &$elements[$index]->children;
+	
+	
       }
     }
     if ($tag['type'] == "close") {  // pop
       $elements = &$stack[count($stack) - 1];
       unset($stack[count($stack) - 1]);
+	echo $elements[0];
     }
   }
 
-return $tabs;
+//return $tabs;
 //return $elements[0];
 }
 
@@ -50,6 +58,5 @@ $val = 'name';
 
 $output = xml_to_object($xml, $val);
 
-echo $output[1];
 
 ?>

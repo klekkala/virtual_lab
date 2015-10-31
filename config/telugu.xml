@@ -8,15 +8,18 @@
     <language>
         <text>మీరు మాట్లాడే భాష అనువర్తనం నిర్మించడానికి అనుకుంటున్నారు?</text>
         <name>
-		<type>text</type>
+            <type>text</type>
         </name>
         <encoding>
+            <type>dropdown</type>
         </encoding>
     </language>
 
     <tabs>
         <text>మీ ప్రణాళికలో మీకు కావలసిన టాబ్లను సంఖ్య ఏమిటి?</text>
-        <number></number>
+        <number>
+            <type>text</type>
+        </number>
     </tabs>
 
     <name>
