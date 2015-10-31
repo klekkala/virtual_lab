@@ -61,23 +61,23 @@
     <classification>
         <text>ఇక్కడ మీరు మీ పేజీలను చూడవచ్చు ఎలా ఇవ్వాల్సి ఉంటుంది</text>
         <context>
-            <type>text</type>
+            <type>ఏం మీరు గురించి విద్యార్థులు నేర్పేటప్పుడు</type>
         </context>
 
         <goals>
-            <type>text</type>
+            <type>విద్యార్థి కోసం లక్ష్యాలు</type>
         </goals>
 
         <process>
-            <type>text</type>
+            <type>బోధన ప్రక్రియ అంటే ఏమిటి?</type>
         </process>
 
         <evaluation>
-            <type>text</type>
+            <type>ఎలా మీరు విద్యార్థులు అంచనా వేసింది?</type>
         </evaluation>
 
         <environment>
-            <type>text</type>
+            <type>కొన్ని జ్ఞానార్జన వాతావరణాలలో</type>
         </environment>
 
     </classification>
