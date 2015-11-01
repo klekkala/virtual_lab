@@ -1,0 +1,14 @@
+<?php
+
+
+use Stichoza\GoogleTranslate\TranslateClient;
+
+$tr = new TranslateClient('en', 'ka');
+
+$tr = new TranslateClient(); // Default is from 'auto' to 'en'
+$tr->setSource('en'); // Translate from English
+$tr->setTarget('ka'); // Translate to Georgian
+
+echo $tr->translate('Hello World!');
+
+?>

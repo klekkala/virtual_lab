@@ -11,10 +11,10 @@
 //**********************************************XML parser********************************************
 //This XML parser works by pushing the retrieved nodes into a stack and later retrieving them//
 class XmlElement {
-  var $name;      //Name of the attribute
-  var $attributes;//List of subattributes
-  var $content;   //Content of the attributes
-  var $children;  //Number of children
+    var $name;      //Name of the attribute
+    var $attributes;//List of subattributes
+    var $content;   //Content of the attributes
+    var $children;  //Number of children
 };
 
 
@@ -34,10 +34,10 @@ function xml_to_object($xml, $val) {
     $stack = array();
     foreach ($tags as $tag) {
         $index = count($elements);
-	
+
         if ($tag['type'] == "complete" || $tag['type'] == "open") {
             $elements[$index] = new XmlElement;
-	    if($tag['tag']=='num'){
+            if($tag['tag']=='num'){
                 array_push($tabs,$tag['value']);
             }
             if($tag['tag']=='text'){
@@ -58,7 +58,7 @@ function xml_to_object($xml, $val) {
         }
     }
 
-    return $tabs;
+    return array($tabs, $data);
     //return $elements[0];
 }
 
@@ -67,25 +67,21 @@ function xml_to_object($xml, $val) {
 $wfile = fopen("/var/www/html/easyauthor/test.html", "w") or die("Unable to open file!");
 $rfile = fopen("/var/www/html/config/telugu.xml", "r") or die("Unable to open file!");
 $rfile1 = fopen("/var/www/html/src/stitch-1.txt", "r") or die("Unable to open file!");
-//$rfile2 = fopen("/var/www/html/src/stitch-2.txt", "r") or die("Unable to open file!");
 $rfile3 = fopen("/var/www/html/src/stitch-3.txt", "r") or die("Unable to open file!");
-$rfile4 = fopen("/var/www/html/src/stitch-4.txt", "r") or die("Unable to open file!");
 $rfile5 = fopen("/var/www/html/src/stitch-5.txt", "r") or die("Unable to open file!");
 
 
 //file pointers reading or writing
 $xml = fread($rfile,filesize("/var/www/html/config/telugu.xml"));
 $txt1 = fread($rfile1,filesize("/var/www/html/src/stitch-1.txt"));
-//$txt2 = fread($rfile2,filesize("/var/www/html/src/stitch-2.txt"));
 $txt3 = fread($rfile3,filesize("/var/www/html/src/stitch-3.txt"));
-$txt4 = fread($rfile4,filesize("/var/www/html/src/stitch-4.txt"));
 $txt5 = fread($rfile5,filesize("/var/www/html/src/stitch-5.txt"));
 
 //$val is the variable which consists of the attribute in the xml file. You get the data which is enclosed in the attribute
 $val = 'name';
 
 //$output is the array which consists of the text fields which is obtained from the xml schema file
-$output = xml_to_object($xml, $val);
+list($output1, $output2, $count) = xml_to_object($xml, $val);
 
 //$number is the number of pages which will be present in the easyauthor framework wizard
 $number = $output[0];
@@ -98,24 +94,31 @@ fwrite($wfile, $txt1);
 //Tab generating,initializing and naming
 for ($x = 1; $x <= $number; $x++) {
     $word = $output[$x];
-    $txt = "<li><a href='#tab1' data-toggle='tab'>$word</a></li>";
-    fwrite($wfile, $txt);
+    $txt2 = "<li><a href='#tab1' data-toggle='tab'>$word</a></li>";
+    fwrite($wfile, $txt2);
 }
 
 fwrite($wfile, $txt3);
 
 //Page content generating
 for ($x = 0; $x <= $number; $x++) {
-    <div class="tab-pane" id="tab1">
-                        <div class="control-group">
-                            <label class="control-label" for="image">Image</label>
-                            <div class="controls">
-                                <input type="image" id="imagefield" name="imagefield" class="required image">
-                            </div>
-                        </div>
+    $txt4 =  "<div class='tab-pane' id='tab'>";
+    fwrite($wfile, $txt41);
 
-                    </div>
+    for($y = 0; $y <= $count[$x]; $y++){
+
+$txt = "<div class='tab-pane' id='tab'>
+                        <div class='control-group'>
+                            <label class='control-label' for='$data[$y+1]'>$data[$y]</label>
+                            <div class='controls'>
+                                dict[$data[$y+1]]
+                            </div>
+                        </div>";
+    }
+$txt4 = "</div>";
+    fwrite($wfile, $txt4);
 }
+
 fwrite($wfile, $txt5);
 
 fclose($rfile);
