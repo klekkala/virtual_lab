@@ -7,7 +7,23 @@
 <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="../prettify.css" rel="stylesheet">
 
+<?php
 
+require '/home/kiran/vendor/autoload.php';
+
+use Stichoza\GoogleTranslate\TranslateClient;
+function translate($text, $lang){
+
+
+$tr = new TranslateClient(); // Default is from 'auto' to 'en'
+$tr->setSource('en'); // Translate from English
+$tr->setTarget($lang); // Translate to Georgian
+
+echo $tr->translate($text);
+}
+
+$lang = 'te';
+?>
 
 
 </head>
@@ -16,12 +32,14 @@
 
     <section id="wizard">
         <div class="page-header">
-            <h1>Design your own EasyAuthor </h1>
+
+            <h1><?php translate('Design your own EasyAuthor', $lang) ?> </h1>
+	<h4> <?php translate('You can design your own easyauthor. Input the given details and generate your app', $lang) ?></h4>
         </div>
         <form id="commentForm" method="get" action="" class="form-horizontal">
             <div id="rootwizard">
                 <ul>
-<li><a href='#tab1' data-toggle='tab1'>0</a></li><li><a href='#tab1' data-toggle='tab1'>1</a></li><li><a href='#tab1' data-toggle='tab1'>2</a></li><li><a href='#tab1' data-toggle='tab1'>1</a></li><li><a href='#tab1' data-toggle='tab1'>1</a></li><li><a href='#tab1' data-toggle='tab1'>1</a></li><li><a href='#tab1' data-toggle='tab1'>1</a></li><li><a href='#tab1' data-toggle='tab1'>1</a></li><li><a href='#tab1' data-toggle='tab1'>3</a></li><li><a href='#tab1' data-toggle='tab1'>5</a></li>                </ul>
+<li><a href='#tab1' data-toggle='tab'>మీరు మాట్లాడే భాష అనువర్తనం నిర్మించడానికి అనుకుంటున్నారు?</a></li><li><a href='#tab2' data-toggle='tab'>మీ ప్రణాళికలో మీకు కావలసిన టాబ్లను సంఖ్య ఏమిటి?</a></li><li><a href='#tab3' data-toggle='tab'>numbers</a></li><li><a href='#tab4' data-toggle='tab'>మీ అనువర్తనం పరిష్కరించడానికి ప్రయత్నిస్తున్నారు సమస్య ఏమిటి?</a></li><li><a href='#tab5' data-toggle='tab'>కొన్ని జ్ఞానార్జన వాతావరణాలలో</a></li><li><a href='#tab6' data-toggle='tab'>ముందు షరతులు ఏమిటి?</a></li><li><a href='#tab7' data-toggle='tab'>విద్యార్థి కోసం లక్ష్యాలు </a></li><li><a href='#tab8' data-toggle='tab'>ఇక్కడ మీరు మీ పేజీలను చూడవచ్చు ఎలా ఇవ్వాల్సి ఉంటుంది</a></li><li><a href='#tab9' data-toggle='tab'>కొన్ని జ్ఞానార్జన వాతావరణాలలో</a></li><li><a href='#tab10' data-toggle='tab'>ఎలా మీరు విద్యార్థులు అంచనా వేసింది?</a></li>                </ul>
                 <div id="bar" class="progress progress-info progress-striped">
                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
                 </div>
@@ -32,21 +50,11 @@
                 <div class="tab-content">
 
 <div class='tab-pane' id='tab1'><div class='control-group'>
-            <label class='control-label' for=image>image</label>
-            <div class='controls'>
-            <input type='text' name='fname'>
-            </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
             <label class='control-label' for=text>name</label>
             <div class='controls'>
             <input type='text' name='fname'>
             </div>
-            </div><div class='control-group'>
-            <label class='control-label' for=text>name</label>
-            <div class='controls'>
-            <input type='text' name='fname'>
-            </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
+            </div></div><div class='tab-pane' id='tab2'><div class='control-group'>
             <label class='control-label' for=dropdown>encoding</label>
             <div class='controls'>
             <input type='text' name='fname'>
@@ -56,12 +64,7 @@
             <div class='controls'>
             <input type='text' name='fname'>
             </div>
-            </div><div class='control-group'>
-            <label class='control-label' for=dropdown>encoding</label>
-            <div class='controls'>
-            <input type='text' name='fname'>
-            </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
+            </div></div><div class='tab-pane' id='tab3'><div class='control-group'>
             <label class='control-label' for=text>number</label>
             <div class='controls'>
             <input type='text' name='fname'>
@@ -71,7 +74,12 @@
             <div class='controls'>
             <input type='text' name='fname'>
             </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
+            </div><div class='control-group'>
+            <label class='control-label' for=text>number</label>
+            <div class='controls'>
+            <input type='text' name='fname'>
+            </div>
+            </div></div><div class='tab-pane' id='tab4'><div class='control-group'>
             <label class='control-label' for=text>nam</label>
             <div class='controls'>
             <input type='text' name='fname'>
@@ -81,7 +89,7 @@
             <div class='controls'>
             <input type='text' name='fname'>
             </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
+            </div></div><div class='tab-pane' id='tab5'><div class='control-group'>
             <label class='control-label' for=text>list</label>
             <div class='controls'>
             <input type='text' name='fname'>
@@ -91,7 +99,7 @@
             <div class='controls'>
             <input type='text' name='fname'>
             </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
+            </div></div><div class='tab-pane' id='tab6'><div class='control-group'>
             <label class='control-label' for=text>list</label>
             <div class='controls'>
             <input type='text' name='fname'>
@@ -101,7 +109,7 @@
             <div class='controls'>
             <input type='text' name='fname'>
             </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
+            </div></div><div class='tab-pane' id='tab7'><div class='control-group'>
             <label class='control-label' for=text>list</label>
             <div class='controls'>
             <input type='text' name='fname'>
@@ -111,7 +119,7 @@
             <div class='controls'>
             <input type='text' name='fname'>
             </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
+            </div></div><div class='tab-pane' id='tab8'><div class='control-group'>
             <label class='control-label' for=password>password</label>
             <div class='controls'>
             
@@ -121,17 +129,7 @@
             <div class='controls'>
             
             </div>
-            </div><div class='control-group'>
-            <label class='control-label' for=password>password</label>
-            <div class='controls'>
-            
-            </div>
-            </div><div class='control-group'>
-            <label class='control-label' for=password>password</label>
-            <div class='controls'>
-            
-            </div>
-            </div></div><div class='tab-pane' id='tab1'><div class='control-group'>
+            </div></div><div class='tab-pane' id='tab9'><div class='control-group'>
             <label class='control-label' for=checkbox>checkbox</label>
             <div class='controls'>
             
@@ -151,32 +149,52 @@
             <div class='controls'>
             
             </div>
-            </div><div class='control-group'>
-            <label class='control-label' for=checkbox>checkbox</label>
+            </div></div><div class='tab-pane' id='tab10'><div class='control-group'>
+            <label class='control-label' for=text>dropdown</label>
             <div class='controls'>
-            
+            <input type='text' name='fname'>
             </div>
             </div><div class='control-group'>
-            <label class='control-label' for=checkbox>checkbox</label>
+            <label class='control-label' for=text>dropdown</label>
             <div class='controls'>
-            
+            <input type='text' name='fname'>
+            </div>
+            </div><div class='control-group'>
+            <label class='control-label' for=text>dropdown</label>
+            <div class='controls'>
+            <input type='text' name='fname'>
+            </div>
+            </div><div class='control-group'>
+            <label class='control-label' for=text>dropdown</label>
+            <div class='controls'>
+            <input type='text' name='fname'>
+            </div>
+            </div><div class='control-group'>
+            <label class='control-label' for=text>dropdown</label>
+            <div class='controls'>
+            <input type='text' name='fname'>
+            </div>
+            </div><div class='control-group'>
+            <label class='control-label' for=text>dropdown</label>
+            <div class='controls'>
+            <input type='text' name='fname'>
             </div>
             </div></div></div>
                 <ul class="pager wizard">
-                    <li class="previous first" style="display:none;"><a href="#">First</a></li>
-                    <li class="previous"><a href="#">Previous</a></li>
-                    <li class="next last" style="display:none;"><a href="#">Last</a></li>
-                    <li class="next"><a href="#">Next</a></li>
-                    <li class="finish"><a href=**>Finish</a></li>
+                    <li class="previous first" style="display:none;"><a href="#"><?php translate('First', $lang) ?></a></li>
+                    <li class="previous"><a href="#"><?php translate('Previous', $lang) ?></a></li>
+                    <li class="next last" style="display:none;"><a href="#"><?php translate('Last', $lang) ?></a></li>
+                    <li class="next"><a href="#"><?php translate('Next', $lang) ?></a></li>
+                    <li class="finish"><a href=**><?php translate('Finish', $lang) ?></a></li>
                 </ul>
             </div>
         </div>
         <div class="col-xs-12">
             <input type='text' name='stepid' id='stepid' value='1' size='2' style='width:20px;' />
-            <input type='button' class='btn' id='disable-step' value='Disable' />
-            <input type='button' class='btn' id='enable-step' value='Enable' />
-            <input type='button' class='btn' id='enable-step' value='Add' />
-            <input type='button' class='btn' id='remove-step' value='Remove' />
+            <input type='button' class='btn' id='disable-step' value=<?php translate('disable', $lang) ?> />
+            <input type='button' class='btn' id='enable-step' value='<?php translate('enable', $lang) ?>' />
+            <input type='button' class='btn' id='enable-step' value='<?php translate('add', $lang) ?>' />
+            <input type='button' class='btn' id='remove-step' value='<?php translate('remove', $lang) ?>' />
         </div>
     </form>
 

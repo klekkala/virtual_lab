@@ -11,13 +11,8 @@ function xml_to_object($xml, $val) {
 $data =  array ();
 $type = array();
 $count = array();
-// for recipe
 
-$md_array["recipe_type"][] = $newdata;
 
-//for cuisine
-
- $md_array["cuisine"][] = $newdata;
 
     $parser = xml_parser_create();
     xml_parser_set_option($parser, XML_OPTION_CASE_FOLDING, 0);
@@ -43,7 +38,7 @@ $md_array["recipe_type"][] = $newdata;
                 }
                 else if($tag['tag'] == 'type'){
                     array_push($data,$tag['value']);
-		    $i++;
+		
                 }
                 else{
                     array_push($type,$tag['tag']);
@@ -51,6 +46,10 @@ $md_array["recipe_type"][] = $newdata;
                 }
 
             }
+
+	    else if($tag['tag']=='num' && $tag['level']==2){
+		    $count[0] = $tag['value'];
+}
 
             $elements[$index]->name = $tag['tag'];
             $elements[$index]->attributes = $tag['attributes'];
@@ -83,9 +82,9 @@ list($output1, $output2, $count) = xml_to_object($xml, $val);
 for($x=0;$x<20;$x++){
 echo $output1[$x];
 echo " ";
-echo $output2[$x+1];
+echo $output2[$x];
 echo " ";
-echo $count[$x];
+echo $count[$x+1];
 }
 
 ?>
