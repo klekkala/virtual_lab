@@ -1,0 +1,13 @@
+
+create table goals(
+gid int,
+name varchar(50),
+starting_date date,
+deadline date,
+priority int,
+goal_desc varchar(100),
+bloom_level varchar(10),
+primary key (gid)
+);
+
+

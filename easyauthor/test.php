@@ -22,7 +22,7 @@ $tr->setTarget($lang); // Translate to Georgian
 echo $tr->translate($text);
 }
 
-$lang = 'te';
+$lang = 'ta';
 ?>
 
 
@@ -34,7 +34,7 @@ $lang = 'te';
         <div class="page-header">
 
             <h1><?php translate('Design your own EasyAuthor', $lang) ?> </h1>
-	<h4> <?php translate('You can design your own easyauthor. Input the given details and generate your app', $lang) ?></h4>
+	<h2> <?php translate('You can design your own easyauthor. Input the given details and generate your app', $lang) ?></h2>
         </div>
         <form id="commentForm" method="get" action="" class="form-horizontal">
             <div id="rootwizard">
