@@ -22,7 +22,7 @@ $tr->setTarget($lang); // Translate to Georgian
 echo $tr->translate($text);
 }
 
-$lang = 'ta';
+$lang = 'en';
 ?>
 
 

@@ -8,6 +8,10 @@
 </head>
 <body>
 
+
+
+
+
  <div id="mainHolder" class="container">
         <div class="row">
             <!-- Source -->
@@ -301,11 +305,12 @@
             
             <!-- Target -->
             <div id="formVisualizer" class="col-lg-6 col-sm-12">
+              <h2>Your Form</h2>
+              <hr></hr>
               <form class="form-horizontal area">
+                <legend class="">New Form</legend>
                 <div id="target" class="connectedSortable">
-                <div class='container'>
-
-    <section id="wizard">
+<section id="wizard">
         <div class="page-header">
             <h1>EasyAuthor </h1>
         </div>
@@ -319,185 +324,13 @@
                     <li><a href="#tab3" data-toggle="tab">Process</a></li>
                     <li><a href="#tab4" data-toggle="tab">Role</a></li>
                     <li><a href="#tab5" data-toggle="tab">Environment</a></li>
-		    <li><a href="#tab6" data-toggle="tab">Evaluation</a></li>
+            <li><a href="#tab6" data-toggle="tab">Evaluation</a></li>
                     <li><a href="#tab7" data-toggle="tab">Instructional Material</a></li>
                 </ul>
                 <div id="bar" class="progress progress-info progress-striped">
                     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
                 </div>
-
-
-
-
-                <div class="tab-content">
-                    <div class="tab-pane" id="tab1">
-                        <div class="control-group">
-                            <label class="control-label" for="image">Image</label>
-                            <div class="controls">
-                                <input type="image" id="imagefield" name="imagefield" class="required image">
-                            </div>
-                        </div>
-
-                        <div class="control-group">
-                            <label class="control-label" for="name">Name</label>
-                            <div class="controls">
-                                <input type="text" id="namefield" name="namefield" class="required">
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                        <div class="tab-pane" id="tab2">
-                         <div class="control-group">
-                                <label class="control-label" for="name">Name</label>
-                                <div class="controls">
-                                    <input type="text" id="namefield" name="namefield" class="required">
-                                </div>
-                            </div>
-   <div class="control-group">
-                                <label class="control-label" for="starting_date">Starting Date</label>
-                                <div class="controls">
-                                    <input type="date" id="namefield" name="namefield" class="required">
-                                </div>
-                            </div>
-   <div class="control-group">
-                                <label class="control-label" for="deadline">Deadline</label>
-                                <div class="controls">
-                                    <input type="text" id="namefield" name="namefield" class="required">
-                                </div>
-                            </div>
-   <div class="control-group">
-                                <label class="control-label" for="priority">Priority</label>
-                                <div class="controls">
-<form action="action_page.php">
-  <select name="cars">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-  <br>
-</form>
-                                </div>
-                            </div>
-   <div class="control-group">
-                                <label class="control-label" for="goal_desc">Goal description</label>
-                                <div class="controls">
-                                    <textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-</textarea>
-                                </div>
-                            </div>
- <div class="control-group">
-                                <label class="control-label" for="bloom">Bloom's level</label>
-                                <div class="controls">
-                                    <input type="text" id="namefield" name="namefield" class="required">
-                                </div>
-                            </div>
-            </div>
-
-
-                        <div class="tab-pane" id="tab3">
-                            <div class="control-group">
-                                <label class="control-label" for="image">Image</label>
-                                <div class="controls">
-                                    <input type="image" id="imagefield" name="imagefield" class="required image">
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="tab-pane" id="tab4">
-                            <div class="control-group">
-                                <label class="control-label" for="image">Image</label>
-                                <div class="controls">
-                                    <input type="image" id="imagefield" name="imagefield" class="required image">
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label class="control-label" for="name">Name</label>
-                                <div class="controls">
-                                    <input type="text" id="namefield" name="namefield" class="required">
-                                </div>
-                            </div>
-
-
-                            <div class="control-group">
-                                <label class="control-label" for="language">Language</label>
-                                <div class="controls">
-                                    <input type="text" id="langfield" name="langfield" class="required">
-                                </div>
-                            </div>
-                        </div>
-    
-
-
-                        <div class="tab-pane" id="tab5">
-                            <div class="control-group">
-                                <label class="control-label" for="url">URL</label>
-                                <div class="controls">
-                                    <input type="text" id="urlfield" name="urlfield" class="required url">
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="tab-pane" id="tab6">
-                            <div class="control-group">
-                                <label class="control-label" for="image">Image</label>
-                                <div class="controls">
-                                    <input type="image" id="imagefield" name="imagefield" class="required image">
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label class="control-label" for="name">Name</label>
-                                <div class="controls">
-                                    <input type="text" id="namefield" name="namefield" class="required">
-                                </div>
-                            </div>
-
-
-                            <div class="control-group">
-                                <label class="control-label" for="language">Language</label>
-                                <div class="controls">
-                                    <input type="text" id="langfield" name="langfield" class="required">
-                                </div>
-                            </div>
-                        </div>
-
-			<div class="tab-pane" id="tab7">
-                            <div class="control-group">
-                                <label class="control-label" for="image">Image</label>
-                                <div class="controls">
-                                    <input type="image" id="imagefield" name="imagefield" class="required image">
-                                </div>
-                            </div>
-
-                            <div class="control-group">
-                                <label class="control-label" for="name">Name</label>
-                                <div class="controls">
-                                    <input type="text" id="namefield" name="namefield" class="required">
-                                </div>
-                            </div>
-
-
-                            <div class="control-group">
-                                <label class="control-label" for="language">Language</label>
-                                <div class="controls">
-                                    <input type="text" id="langfield" name="langfield" class="required">
-                                </div>
-                            </div>
-                        </div>
-</div>
-
-
-
-                    <ul class="pager wizard">
+                   <ul class="pager wizard">
                         <li class="previous first" style="display:none;"><a href="#">First</a></li>
                         <li class="previous"><a href="#">Previous</a></li>
                         <li class="next last" style="display:none;"><a href="#">Last</a></li>
@@ -519,21 +352,14 @@ The cat was playing in the garden.
 
 
     </section>
-</div>  
+</div>
+
+
                 </div>
               </form>
             </div>
         </div>        
-        <div class="row">
-          <div class="col-lg-12 col-sm-12">
-            <h2>Generated markup</h2>
-            <hr></hr>
-            <textarea id="formSource"></textarea>
-            <p class="followme">
-                Follow me on GitHub - <a href="https://github.com/icytin" target="_blank">icytin</a>
-            </p>
-          </div>
-        </div>
+       <!--Generated markup -->
     </div>
     
     <div id="contextMenu" class="dropdown clearfix">
@@ -567,16 +393,7 @@ The cat was playing in the garden.
 
 
 
-
-
-
-
-
-
-
-
-
-
+ 
 
 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -584,22 +401,23 @@ The cat was playing in the garden.
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <script src="../jquery.bootstrap.wizard.js"></script>
         <script src="../prettify.js"></script>
-        <script>
+    <script src="form.js"></script>
+<script>
 $(document).ready(function() {
 
-        $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+    $('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
 
-if(index==2) {
-				// Make sure we entered the name
-				if(!$('#name').val()) {
-					alert('You must enter your name');
-					$('#name').focus();
-					return false;
-				}
-			}
-			
-			// Set the name for the next tab
-			$('#tab3').html('Hello, ' + $('#name').val());
+        if(index==2) {
+            // Make sure we entered the name
+            if(!$('#name').val()) {
+                alert('You must enter your name');
+                $('#name').focus();
+                return false;
+                }
+            }
+
+            // Set the name for the next tab
+            $('#tab3').html('Hello, ' + $('#name').val());
             var $total = navigation.find('li').length;
             var $current = index+1;
             var $percent = ($current/$total) * 100;
@@ -609,75 +427,75 @@ if(index==2) {
         $('#pills').bootstrapWizard({'tabClass': 'nav nav-pills', 'debug': false, onShow: function(tab, navigation, index) {
             console.log('onShow');
             }, onNext: function(tab, navigation, index) {
-            console.log('onNext');
+                console.log('onNext');
             }, onPrevious: function(tab, navigation, index) {
-            console.log('onPrevious');
+                console.log('onPrevious');
             }, onLast: function(tab, navigation, index) {
-            console.log('onLast');
+                console.log('onLast');
             }, onTabClick: function(tab, navigation, index) {
-            console.log('onTabClick');
-            alert('on tab click disabled');
+                console.log('onTabClick');
+                alert('on tab click disabled');
             }, onTabShow: function(tab, navigation, index) {
-            console.log('onTabShow');
-            var $total = navigation.find('li').length;
-            var $current = index+1;
-            var $percent = ($current/$total) * 100;
-            $('#pills .progress-bar').css({width:$percent+'%'});
+                console.log('onTabShow');
+                var $total = navigation.find('li').length;
+                var $current = index+1;
+                var $percent = ($current/$total) * 100;
+                $('#pills .progress-bar').css({width:$percent+'%'});
             }});
         $('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-pills'});
 
         // Disable step
         $('#disable-step').on('click', function() {
-                $('#rootwizard').bootstrapWizard('disable', $('#stepid').val());
+            $('#rootwizard').bootstrapWizard('disable', $('#stepid').val());
                 });
 
         // Enable step
         $('#enable-step').on('click', function() {
-                $('#rootwizard').bootstrapWizard('enable', $('#stepid').val());
+            $('#rootwizard').bootstrapWizard('enable', $('#stepid').val());
                 });
 
         // Remove step
         $('#remove-step').on('click', function() {
-                $('#rootwizard').bootstrapWizard('remove', $('#stepid').val(), true);
+            $('#rootwizard').bootstrapWizard('remove', $('#stepid').val(), true);
                 });
 
         // Show step
         $('#show-step').on('click', function() {
-                $('#rootwizard').bootstrapWizard('display', $('#stepid').val());
+            $('#rootwizard').bootstrapWizard('display', $('#stepid').val());
                 });
 
         // Hide step
         $('#hide-step').on('click', function() {
-                $('#rootwizard').bootstrapWizard('hide', $('#stepid').val());
+            $('#rootwizard').bootstrapWizard('hide', $('#stepid').val());
                 });
 
         var $validator = $("#commentForm").validate({
-rules: {
-emailfield: {
-required: true,
-email: true,
-minlength: 3
+            rules: {
+                emailfield: {
+                    required: true,
+                        email: true,
+                        minlength: 3
 },
 namefield: {
-required: true,
-minlength: 3
+    required: true,
+        minlength: 3
 },
 urlfield: {
-required: true,
-minlength: 3,
-url: true
+    required: true,
+        minlength: 3,
+        url: true
 }
 }
 
 });
 
 $('#rootwizard').bootstrapWizard({
-        'tabClass': 'nav nav-pills',
+    'tabClass': 'nav nav-pills',
         'onNext': function(tab, navigation, index) {
-        var $valid = $("#commentForm").valid();
-        if(!$valid) {
-        $validator.focusInvalid();
-        return false;
+            var $valid = $("#commentForm").valid();
+            if(!$valid) {
+                $validator.focusInvalid();
+                return false;
         }
         }
         });
