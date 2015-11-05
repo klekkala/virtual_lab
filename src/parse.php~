@@ -86,5 +86,12 @@ $val = 'name';
 
 list($output1, $output2, $count) = xml_to_object($xml, $val);
 
+for($x=0;$x<20;$x++){
+echo $output1[$x];
+echo " ";
+echo $output2[$x];
+echo " ";
+echo $count[$x+1];
+}
 
 ?>
