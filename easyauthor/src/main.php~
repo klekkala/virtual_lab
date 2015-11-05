@@ -102,7 +102,85 @@ The cat was playing in the garden.
                             </div>
             </div>
 
+<div class="tab-pane" id="tab3">
+                            <div class="control-group">
+                                <label class="control-label" for="email">Email</label>
+                                <div class="controls">
+                                  <input type="text" id="emailfield" name="emailfield" class="required email">
+                                </div>
+                              </div>
 
+                              <div class="control-group">
+                                <label class="control-label" for="name">Name</label>
+                                <div class="controls">
+                                  <input type="text" id="namefield" name="namefield" class="required">
+                                </div>
+                              </div>
+                        </div>
+
+<div class="tab-pane" id="tab4">
+                            <div class="control-group">
+                                <label class="control-label" for="email">Email</label>
+                                <div class="controls">
+                                  <input type="text" id="emailfield" name="emailfield" class="required email">
+                                </div>
+                              </div>
+
+                              <div class="control-group">
+                                <label class="control-label" for="name">Name</label>
+                                <div class="controls">
+                                  <input type="text" id="namefield" name="namefield" class="required">
+                                </div>
+                              </div>
+                        </div>
+
+<div class="tab-pane" id="tab5">
+                            <div class="control-group">
+                                <label class="control-label" for="email">Email</label>
+                                <div class="controls">
+                                  <input type="text" id="emailfield" name="emailfield" class="required email">
+                                </div>
+                              </div>
+
+                              <div class="control-group">
+                                <label class="control-label" for="name">Name</label>
+                                <div class="controls">
+                                  <input type="text" id="namefield" name="namefield" class="required">
+                                </div>
+                              </div>
+                        </div>
+
+<div class="tab-pane" id="tab6">
+                            <div class="control-group">
+                                <label class="control-label" for="email">Email</label>
+                                <div class="controls">
+                                  <input type="text" id="emailfield" name="emailfield" class="required email">
+                                </div>
+                              </div>
+
+                              <div class="control-group">
+                                <label class="control-label" for="name">Name</label>
+                                <div class="controls">
+                                  <input type="text" id="namefield" name="namefield" class="required">
+                                </div>
+                              </div>
+                        </div>
+
+<div class="tab-pane" id="tab7">
+                            <div class="control-group">
+                                <label class="control-label" for="email">Email</label>
+                                <div class="controls">
+                                  <input type="text" id="emailfield" name="emailfield" class="required email">
+                                </div>
+                              </div>
+
+                              <div class="control-group">
+                                <label class="control-label" for="name">Name</label>
+                                <div class="controls">
+                                  <input type="text" id="namefield" name="namefield" class="required">
+                                </div>
+                              </div>
+                        </div>
 
 
 
