@@ -149,6 +149,11 @@ $number = $count[0];
 //Initializing HTML and scripts
 fwrite($wfile, $txt1);
 
+//Specifing the language
+
+$txt = "$" + "lang = $lang";
+fwrite($wfile, $txt);
+
 //Tab generating,initializing and naming
 for ($x = 1; $x <= $number; $x++) {
     $word = $tabs[$x];

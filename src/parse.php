@@ -79,9 +79,12 @@ $count = array();
     return array($type, $data, $count);
 }
 
+
+//Give the name of the xml file to be parsed
 $rfile1 = fopen("/var/www/html/config/telugu.xml", "r") or die("Unable to open file!");
 $xml = fread($rfile1,filesize("/var/www/html/config/telugu.xml"));
 
+//Give the name of the attribute to be compared
 $val = 'name';
 
 list($output1, $output2, $count) = xml_to_object($xml, $val);
